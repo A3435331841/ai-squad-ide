@@ -1,0 +1,18 @@
+# Node
+node_modules/
+extension/out/
+extension/dist/
+*.vsix
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.pytest_cache/
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
