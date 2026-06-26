@@ -1,0 +1,35 @@
+{
+  "name": "ai-squad-ide",
+  "displayName": "AI Squad IDE",
+  "description": "A multi-agent AI coding squad prototype inside VS Code.",
+  "version": "0.0.1",
+  "publisher": "a3435331841",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:aiSquad.createTaskPlan"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "aiSquad.createTaskPlan",
+        "title": "AI Squad: Create Task Plan"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "vscode:prepublish": "npm run compile"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/vscode": "^1.90.0",
+    "typescript": "^5.4.5"
+  }
+}
